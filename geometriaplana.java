@@ -6,7 +6,7 @@ public class geometriaplana {
         int opcao;
 
         do {
-            System.out.println("\n=== GEOMETRIA PLANA ===");
+            System.out.println("\nGEOMETRIA PLANA");
             System.out.println("1 - Quadrado");
             System.out.println("2 - Retngulo");
             System.out.println("3 - Triangulo");
