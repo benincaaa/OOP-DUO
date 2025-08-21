@@ -13,7 +13,7 @@ public class geometriaespecial {
         public Prisma(double base, double altura, double profundidade) {
             this.base = base;
             this.altura = altura;
-            this.profundidade = profundidade;
+            this.profundidade = profundidade; 
         }
         public double areaLateral() {
             return 2 * (base + altura) * profundidade;
