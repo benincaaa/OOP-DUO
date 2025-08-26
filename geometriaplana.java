@@ -16,13 +16,13 @@ public class geometriaplana {
             opcao = sc.nextInt();
 
             switch (opcao) {
-                case 1 -> {
+                case 1 {
                     System.out.print("Lado: ");
                     double lado = sc.nextDouble();
                     System.out.println("Área: " + (lado * lado));
                     System.out.println("Perímetro: " + (4 * lado));
                 }
-                case 2 -> {
+                case 2 {
                     System.out.print("Base: ");
                     double base = sc.nextDouble();
                     System.out.print("Altura: ");
@@ -30,7 +30,7 @@ public class geometriaplana {
                     System.out.println("Área: " + (base * altura));
                     System.out.println("Perímetro: " + (2 * (base + altura)));
                 }
-                case 3 -> {
+                case 3 {
                     System.out.print("Base: ");
                     double base = sc.nextDouble();
                     System.out.print("Altura: ");
@@ -45,14 +45,14 @@ public class geometriaplana {
                     double l3 = sc.nextDouble();
                     System.out.println("Perímetro: " + (l1 + l2 + l3));
                 }
-                case 4 -> {
+                case 4 {
                     System.out.print("Raio: ");
                     double raio = sc.nextDouble();
                     System.out.println("Área: " + (Math.PI * raio * raio));
                     System.out.println("Perímetro (circunferência): " + (2 * Math.PI * raio));
                 }
-                case 0 -> System.out.println("Encerrando...");
-                default -> {
+                case 0 System.out.println("Encerrando...");5
+                default  {
                     if (opcao != 0) System.out.println("Opção inválida!");
                 }
             }
