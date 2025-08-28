@@ -1,7 +1,7 @@
 import java.util.Scanner;
-
-public class geometriaespecial {
-
+ 
+public class geometriaespacial {
+ 
     static abstract class FiguraEspacial {
         public abstract double area();
         public abstract double volume();
@@ -55,7 +55,7 @@ public class geometriaespecial {
             return areaBase() * altura;
         }
     }
-
+ 
     // Esfera
     static class Esfera extends FiguraEspacial {
         private double raio;
@@ -71,7 +71,7 @@ public class geometriaespecial {
             return (4.0/3.0) * Math.PI * Math.pow(raio, 3);
         }
     }
-
+ 
     // Cone
     static class Cone extends FiguraEspacial {
         private double raio, altura;
@@ -100,7 +100,7 @@ public class geometriaespecial {
             return (1.0/3.0) * areaBase() * altura;
         }
     }
-
+ 
     // Tronco de cone
     static class TroncoCone extends FiguraEspacial {
         private double raioMaior, raioMenor, altura;
@@ -133,7 +133,7 @@ public class geometriaespecial {
             return (1.0/3.0) * Math.PI * altura * (raioMaior*raioMaior + raioMaior*raioMenor + raioMenor*raioMenor);
         }
     }
-
+ 
     // Validação de entrada
     static double lerValorPositivo(Scanner sc, String mensagem) {
         double valor;
@@ -148,7 +148,7 @@ public class geometriaespecial {
         } while (valor <= 0);
         return valor;
     }
-
+ 
     // Menu principal
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
